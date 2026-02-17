@@ -5,11 +5,12 @@
 
 .subscription_text {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 150%;
   letter-spacing: 0.02em;
   text-align: center;
   color: #15152b;
+  margin-bottom: 16px;
 }
 
 .subscription_list {
@@ -24,13 +25,15 @@
   transition: 0.3s ease;
   box-shadow: 0 0 25px;
   flex-basis: calc((100% - 24px) / 2);
+  position: relative;
 }
 
 .glow-gold {
   box-shadow: 0 0 25px #bf953f99;
 }
 
-.glow-platinum {
+.glow-platinum,
+.additional_services_list {
   box-shadow: 0 0 25px #665f5f;
 }
 
@@ -41,6 +44,7 @@
   letter-spacing: 0.02em;
   text-align: center;
   color: #15152b;
+  margin-bottom: 16px;
 }
 .subscription_box_gold,
 .subscription_box_price {
@@ -96,6 +100,10 @@
   height: 60px;
   border-radius: 4px;
   margin: 0 auto 24px;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .subscription_subtitle {
@@ -114,6 +122,7 @@
   flex-direction: column;
   gap: 12px;
 }
+
 .subscription_info_item {
   list-style: disc;
   list-style-position: inside;
@@ -134,4 +143,32 @@
 
 .list-spacing {
   margin-left: 40px;
+}
+
+.additional {
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.additional_services_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #b0b1be;
+  border-radius: 20px;
+  padding: 20px 40px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px;
+  gap: 32px;
+}
+
+.additional_services_item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  list-style: disc;
+  list-style-position: inside;
+  color: #15152b;
 }
