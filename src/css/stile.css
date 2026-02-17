@@ -1,0 +1,21 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* Common styles */
+@import url("./fonts.css");
+@import url("./reset.css");
+@import url("./base.css");
+@import url("./container.css");
+
+/* Sections style */
+@import url("./header.css");
+@import url("./home.css");
+@import url("./approach.css");
+@import url("./benefits.css");
+@import url("./process.css");
+@import url("./service.css");
+@import url("./footer.css");
+@import url("./subscription.css");

@@ -1,14 +1,415 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="CURATO PRIVATE OÜ personal house manager width=device-width, initial-scale=1.0"
-    />
-    <title>CURATO PRIVATE OÜ</title>
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>CURATO PRIVATE OÜ – Персональный менеджер по управлению домом в Эстонии</title>
+
+  <meta name="description" content="Профессиональное управление частным домом в Эстонии. Контроль, обслуживание, координация подрядчиков и экстренное реагирование. Подписка GOLD и PLATINUM." />
+
+  <meta name="keywords" content="управление домом, house management Estonia, персональный менеджер дома, обслуживание частного дома, контроль дома, Эстония" />
+
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="CURATO PRIVATE OÜ – Управление частным домом" />
+  <meta property="og:description" content="Персональный офис по управлению домом. Полный контроль, обслуживание и спокойствие." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.ee" />
+  <meta property="og:image" content="https://yourdomain.ee/preview.jpg" />
+  <link rel="canonical" href="https://yourdomain.ee" />
+
+  <link rel="icon" type="image/png" href="./src/images/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./src/css/stile.css" />
+</head>
   <body>
-    <load src="./src/partials/header.html">
+    <header class="header">
+      <div class="container">
+        <nav class="header-nav">
+          <a href="#home" class="header_logo">CURATO PRIVATE OÜ</a>
+
+          <ul class="nav_list">
+             <li class="nav_item">
+              <a class="nav_link" href="#approach" class="nav__link">Подход</a>
+            </li>
+            <li class="nav_item">
+              <a class="nav_link" href="#benefits" class="nav__link"
+                >Преимущества</a
+              >
+            </li>
+            <li class="nav_item">
+              <a class="nav_link" href="#process" class="nav__link">Процесс</a>
+            </li>
+            <li class="nav_item">
+              <a class="nav_link" href="#service" class="nav__link"
+                >Формат обслуживания</a
+              >              
+            </li>
+            <li class="nav_item">
+              <a class="nav_link" href="#subscription" class="nav__link">Подписка</a>
+            </li>
+            <li class="nav_item">
+              <a
+                class="nav_link"
+                href="#contacts"
+                class="nav__link nav__link--accent"
+              >
+                              Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="home" id="home">
+        <div class="container">
+          <h1 class="home_title">CURATO PRIVATE OÜ</h1>
+          <p class="home_text">Забота и контроль в одном сервисе</p>
+          <h2 class="home_subtitle">Ваш личный офис по управлению домом</h2>
+          <p class="home_text">
+            Мы берем на себя контроль, обслуживание и решение бытовых и
+            технических вопросов, чтобы вы могли спокойно заниматься своей
+            жизнью.
+          </p>
+          <div class="home_box_btn">
+            <button class="home_btn">Запросить аудит дома</button>
+            <a class="home_btn info_btn" href="#process">Узнать подробнее</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="approach" class="approach">
+        <div class="container">
+          <ul class="approach_list">
+            <li class="approach_item">
+              <div class="approach_icons">
+                <svg class="icon-problem" viewBox="0 0 32 32">
+                  <use href="./src/images/problem.svg"></use>
+                </svg>
+              </div>
+              <h2 class="approach_title">ПРОБЛЕМА</h2>
+              <h3 class="approach_subtitle">
+                Дом требует внимания, а ваше время слишком ценно.
+              </h3>
+              <p class="approach_text">
+                Большинство владельцев домов сталкиваются с одним и тем же:
+              </p>
+              <ul class="approach_info_list">
+                <li class="approach_info_item">
+                  десятки подрядчиков и контактов
+                </li>
+                <li class="approach_info_item">
+                  проблемы решаются, но возвращаются
+                </li>
+                <li class="approach_info_item">
+                  отсутствие системного контроля
+                </li>
+                <li class="approach_info_item">
+                  стресс, когда что-то случается в ваше отсутствие
+                </li>
+              </ul>
+              <h3 class="approach_subtitle">
+                Дом становится источником забот, а не комфорта
+              </h3>
+            </li>
+
+            <li class="approach_item">
+              <div class="approach_icons">
+                <svg class="icon-solution" viewBox="0 0 32 32">
+                  <use href="./src/images/solution.svg"></use>
+                </svg>
+              </div>
+              <h2 class="approach_title">РЕШЕНИЕ</h2>
+              <h3 class="approach_subtitle">
+                CURATO PRIVATE - это не услуги, это порядок, контроль и
+                спокойствие
+              </h3>
+              <p class="approach_text">
+                Мы работаем как единый центр управления вашим домом:
+              </p>
+              <ul class="approach_info_list">
+                <li class="approach_info_item">один контакт</li>
+                <li class="approach_info_item">полная ответственность</li>
+                <li class="approach_info_item">проактивный подход</li>
+                <li class="approach_info_item">никакого стресса</li>
+              </ul>
+              <h3 class="approach_subtitle">
+                Один номер - все бытовые вопросы решены
+              </h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="benefits" class="benefits">
+        <div class="container">
+          <h2 class="benefits_title">ЧТО ВЫ ПОЛУЧАЕТЕ</h2>
+          <div class="benefits_box">
+            <ul class="benefits_list">
+              <li class="benefits_item">
+                <h3 class="benefits_subtitle">Комплексный контроль дома</h3>
+                <p class="benefits_text">
+                  Плановые визуальные и технические осмотры, профилактика
+                  проблем, аналитика состояния дома
+                </p>
+              </li>
+
+              <li class="benefits_item">
+                <h3 class="benefits_subtitle">
+                  Мелкий ремонт без лишних вызовов
+                </h3>
+                <p class="benefits_text">
+                  Электрика и сантехника до 10 часов: розетки, выключатели,
+                  светильники, протечки, смесители, сифоны
+                </p>
+              </li>
+              <li class="benefits_item">
+                <h3 class="benefits_subtitle">
+                  Координация сервисов и подрядчиков
+                </h3>
+                <p class="benefits_text">
+                  Мы организуем, сопровождаем и контролируем работы - без вашего
+                  участия
+                </p>
+              </li>
+              <li class="benefits_item">
+                <h3 class="benefits_subtitle">Экстренное реагирование</h3>
+                <p class="benefits_text">
+                  Быстрая реакция в случае аварийных ситуаций и нестандартных
+                  проблем.
+                </p>
+              </li>
+              <li class="benefits_item">
+                <h3 class="benefits_subtitle">Консультации и оптимизации</h3>
+                <p class="benefits_text">
+                  Рекомендации по улучшению, эксплуатации и экономии в доме.
+                </p>
+              </li>
+              <li class="benefits_item">
+                <h3 class="benefits_subtitle">Присмотр за домом и животными</h3>
+                <p class="benefits_text">
+                  Полный контроль дома и забота о питомцах в период отсутствия
+                  владельцев
+                </p>
+              </li>
+            </ul>
+            <div class="benefits_img_box">
+              <img
+                class="benefits_img"
+                src="./src/images/AI_SmartHome_WallMounted.jpg"
+                alt="home"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="process">
+        <div class="container">
+          <ul class="process_list">
+            <li class="process_item">
+              <h2 class="process_title">КАК ЭТО РАБОТАЕТ</h2>
+              <h3 class="process_subtitle">Аудит дома</h3>
+              <p class="process_text">
+                Мы изучаем состояние дома, системы и риски.
+              </p>
+              <h3 class="process_subtitle">План и стратегия</h3>
+              <p class="process_text">
+                Определяем приоритеты, график проверок и обслуживания.
+              </p>
+
+              <h3 class="process_subtitle">Постоянный контроль</h3>
+              <p class="process_text">
+                Регулярные осмотры, профилактика, ремонт.
+              </p>
+
+              <h3 class="process_subtitle">Решение любых ситуаций</h3>
+              <p class="process_text">
+                Плановые и экстренные задачи решаются без вашего участия.
+              </p>
+              <img
+                src="./src/images/resident_2024-10-10_1nnav88m_image-20-1.avif"
+                alt=""
+              />
+            </li>
+
+            <li class="process_item">
+              <h2 class="process_title">РЕЗУЛЬТАТ ДЛЯ КЛИЕНТА</h2>
+              <p class="process_text">Дом под постоянным контролем</p>
+              <p class="process_text">
+                Проблемы предотвращаются, а не "тушатся"
+              </p>
+              <p class="process_text">Нет хаоса, звонков и поиска мастеров</p>
+              <p class="process_text">Один ответственный контакт</p>
+              <p class="process_text">Спокойствие - даже когда вас нет рядом</p>
+              <div class="process_img">
+              <img src="./src/images/lx_chicago76_hom_project_05.jpeg" alt="" />
+              </div>
+            </li>
+
+            <li class="process_item">
+              <h2 class="process_title">ПРИНЦИПЫ РАБОТЫ</h2>
+              <p class="process_text">Локальное присутствие</p>
+              <p class="process_text">Конфиденциальность</p>
+              <p class="process_text">Прозрачная отчетность</p>
+              <p class="process_text">Пунктуальность и надежность</p>
+              <p class="process_text">Работа по договору</p>
+              <div class="process_img2">
+               <img src="./src/images/b4c68a08-92a6-45c1-8012-ed2d954267d7.png" alt="" />
+               </div>
+            </li>
+          </ul>
+          <h2 class="process_title_info">
+            Вы живете своей жизнью. Мы заботимся о вашем доме.
+          </h2>
+        </div>
+      </section>
+
+      <section id="service" class="service">
+        <div class="container service_box">
+          <h2 class="service_title">СЕРВИС ПО ПОДПИСКЕ</h2>
+          <p class="service_text">
+            CURATO PRIVATE работает по подписке, обеспечивая постоянную
+            готовность и контроль
+          </p>
+          <p class="service_text">Подписка это:</p>
+          <ul class="service_list">
+            <li class="service_item">приоритетное обслуживание</li>
+            <li class="service_item">системный подход</li>
+            <li class="service_item">ответственность за результат</li>
+            <li class="service_item">долгосрочное спокойствие</li>           
+            </li>
+          </ul>
+          <p class="service_text">(Индивидуальные условия обсуждаются после аудита дома.)</p>
+          <!-- <div class="service_box_btn">
+          <button class="service_btn" type="button"> 
+            <svg class="service_icons" viewBox="0 0 32 32">
+            <use href="./src/images/diamond.svg#icon-diamond"></use>
+            </svg>
+            GOLD
+          </button>
+          <button class="service_btn platinum_btn" type="button"> 
+            <svg class="service_icons" viewBox="0 0 32 32">
+            <use href="./src/images/diamond.svg#icon-diamond"></use>
+            </svg>
+            PLATINUM
+          </button>
+          </div> -->
+        </div>
+      </section>
+  <section id="subscription" class="subscription">
+  <div class="container">
+    <p class="subscription_text">Забота и контроль в одном сервисе</p>
+    <h2 class="subscription_title">Ваш личный офис по управлению домом</h2>
+    <p class="subscription_text">
+      Мы берем на себя контроль, обслуживание и решение бытовых и технических вопросов,
+      чтобы вы могли спокойно заниматься своей жизнью.
+    </p>
+
+    <ul class="subscription_list">
+
+        <li class="subscription_item glow-gold">
+          <div class="subscription_box_gold">
+        <h2 class="subscription_title_gold">GOLD</h2>
+        </div>
+        <h3 class="subscription_subtitle">
+          "Я знаю, что с домом все в порядке"
+        </h3>
+
+        <ul class="subscription_info_list">
+          <li class="subscription_info_item"><span class="subscription_info_span">1 визит</span> в неделю</li>
+          <li class="subscription_info_item">
+            Мелкие работы до <span class="subscription_info_span">15 часов</span> в месяц, включая:
+            <ul class="subscription_info_list list-spacing">
+              <li class="subscription_info_item">Электрика и свет</li>
+              <li class="subscription_info_item">Сантехника и протечки</li>
+              <li class="subscription_info_item">Ремонт дверей и окон</li>
+            </ul>
+          </li>
+          <li class="subscription_info_item">Контроль инженерных систем</li>
+          <li class="subscription_info_item">Хранение ключей и безопасность</li>
+          <li class="subscription_info_item">Фото- и видеоотчеты после визитов</li>
+          <li class="subscription_info_item">Консультации по улучшению и оптимизации</li>
+          <li class="subscription_info_item">Консультации по подключению дополнительных услуг куратора</li>
+        </ul>
+        <div class="subscription_box_price">
+        <p class="subscription_price">890 €/месяц</p>
+        </div>
+      </li>
+
+     
+      <li class="subscription_item glow-platinum">
+        <div class="subscription_box_platinum">
+        <h2 class="subscription_title_platinum">PLATINUM</h2>
+        </div>
+        <h3 class="subscription_subtitle">
+          "Я вообще об этом не думаю"
+        </h3>
+
+        <ul class="subscription_info_list">
+          <li class="subscription_info_item"><span class="subscription_info_span">2 визита</span> в неделю</li>
+          <li class="subscription_info_item">
+            Мелкие работы до <span class="subscription_info_span">30 часов</span> в месяц, включая:
+            <ul class="subscription_info_list list-spacing">
+              <li class="subscription_info_item">Электрика и свет</li>
+              <li class="subscription_info_item">Сантехника и протечки</li>
+              <li class="subscription_info_item">Ремонт и монтаж</li>
+            </ul>
+          </li>
+          <li class="subscription_info_item">Контроль и координация подрядчиков</li>
+          <li class="subscription_info_item">Мойка фасада и крыши 1 раз в год</li>
+          <li class="subscription_info_item">Присмотр за домом и животными</li>
+          <li class="subscription_info_item">
+            Сезонная подготовка дома 1 раз в год:
+            осмотр крыши, чистка водостоков и ливневок
+          </li>
+          <li class="subscription_info_item">
+            Реагирование на экстренные ситуации в течение 1 часа
+          </li>
+        </ul>
+        <div class="subscription_box_price_platinum">
+        <p class="subscription_price_platinum">1490 €/месяц</p>
+        </div>
+      </li>
+
+    </ul>
+
+    <ul class="additional_services">
+      <li>Дополнительные услуги – 55 €/час</li>
+      <li>Услуги куратора – 55 €/час</li>
+      <li>Подготовка дома к продаже или аренде – 300 €</li>
+      <li>Мойка фасада – 400–800 €</li>
+      <li>Мойка крыши и профилактика протечек – 350–700 €</li>
+    </ul>
+
+  </div>
+</section>
+      <footer id="contacts" class="footer">
+        <div class="container">
+          <a href="#" class="footer_logo">CURATO PRIVATE OÜ</a>
+          <address>
+            <ul>
+              <li class="footer_address">
+                <a class="footer_address" href="mailto:vanazelyazko@gmail.com"
+                  >vanazelyazko@gmail.com</a
+                >
+              </li>
+              <li class="footer_address">
+                <a class="footer_address" href="tel:+37258176400">+372 5817 6400</a>
+              </li>
+            </ul>
+          </address>
+          <button type="button">Запросить аудит дома</button>
+         </div>
+
+      </footer>
+    </main>
   </body>
 </html>

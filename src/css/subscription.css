@@ -1,0 +1,137 @@
+.subscription {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.subscription_text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #15152b;
+}
+
+.subscription_list {
+  display: flex;
+  gap: 32px;
+}
+
+.subscription_item {
+  background-color: #b0b1be;
+  border-radius: 20px;
+  padding: 20px 40px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 25px;
+  flex-basis: calc((100% - 24px) / 2);
+}
+
+.glow-gold {
+  box-shadow: 0 0 25px #bf953f99;
+}
+
+.glow-platinum {
+  box-shadow: 0 0 25px #665f5f;
+}
+
+.subscription_title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #15152b;
+}
+.subscription_box_gold,
+.subscription_box_price {
+  background: linear-gradient(
+    to right,
+    #fcf6ba 1%,
+    #fcf6ba 15%,
+    #fbf5b7 50%,
+    #aa771c 70%,
+    #bf953f 100%
+  );
+}
+
+.subscription_title_gold,
+.subscription_title_platinum,
+.subscription_price,
+.subscription_price_platinum {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #8b5e10;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.subscription_box_platinum,
+.subscription_box_price_platinum {
+  background: linear-gradient(
+    to right,
+    #dcdcdc 0%,
+    #dadada 1%,
+    #f2f2f2 15%,
+    #dadada 30%,
+    #e0e0e0 50%,
+    #9c9898 70%,
+    #665f5f 100%
+  );
+}
+
+.subscription_title_platinum,
+.subscription_price_platinum {
+  color: #303031;
+}
+
+.subscription_box_price,
+.subscription_box_price_platinum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 60px;
+  border-radius: 4px;
+  margin: 0 auto 24px;
+}
+
+.subscription_subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #15152b;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.subscription_info_list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.subscription_info_item {
+  list-style: disc;
+  list-style-position: inside;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #15152b;
+}
+
+.subscription_info_item::marker {
+  color: #8b5e10;
+}
+
+.subscription_info_span {
+  font-weight: 700;
+}
+
+.list-spacing {
+  margin-left: 40px;
+}
