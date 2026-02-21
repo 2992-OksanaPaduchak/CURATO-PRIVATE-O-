@@ -1,16 +1,13 @@
 .service {
-  background: #2e2f42;
-  background-color: #aaabb8;
   background-image:
-    linear-gradient(rgba(79, 80, 99, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/blue-color__on-web.jpg.webp);
-  background-repeat: no-repeat;
+    linear-gradient(rgba(46, 47, 66, 0.8), rgba(46, 47, 66, 0.8)),
+    url("../images/blue-color__on-web.jpg.webp");
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 
 .service_box {
@@ -36,73 +33,23 @@
 }
 
 .service_item {
-  list-style: disc;
-  list-style-position: inside;
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
+  color: #daa520;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.service_item:hover {
+  transform: translateX(8px);
+  color: #fcf6ba;
+}
+
+.service_item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
   color: #daa520;
 }
-
-.service_box_btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 120px;
-}
-.service_btn {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 150%;
-  letter-spacing: -0.01em;
-  color: #fff;
-  background-color: #daa520;
-  cursor: pointer;
-  border: none;
-  border-radius: 200px;
-  padding: 16px 20px;
-  width: 350px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-top: 24px;
-}
-
-.service_btn:hover,
-.service_btn:focus {
-  background-color: #aa771c;
-}
-
-.platinum_btn {
-  color: #555;
-  background: linear-gradient(
-    to right,
-    #dcdcdc 0%,
-    #dadada 1%,
-    #f2f2f2 15%,
-    #dadada 30%,
-    #e0e0e0 50%,
-    #9c9898 70%,
-    #665f5f 100%
-  );
-}
-
-.platinum_btn:hover,
-.platinum_btn:focus {
-  background: linear-gradient(
-    to right,
-    #e2e0e0 0%,
-    #acabab 1%,
-    #f2f2f2 15%,
-    #dadada 30%,
-    #9e9c9c 50%,
-    #757474 70%,
-    #3b3b3b 100%
-  );
-}
-/* .service_icons svg {
-  width: 64%;
-  height: 64%;
-  fill: none;
-  stroke: #0f0f0f;
-  stroke-width: 1.5;
-} */

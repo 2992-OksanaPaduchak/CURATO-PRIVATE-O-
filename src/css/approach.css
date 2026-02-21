@@ -12,8 +12,16 @@
 .approach_item {
   background-color: #15152b;
   border-radius: 20px;
-  padding: 60px 40px;
-  flex-basis: calc((100% - 24px) / 2);
+  padding: 40px;
+  flex-basis: calc((100% - 32px) / 2);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.approach_item:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
 }
 
 .approach_title {
@@ -47,11 +55,29 @@
   margin-bottom: 12px;
 }
 
+.approach_info_list {
+  list-style: none;
+  padding: 0;
+}
+
 .approach_info_item {
-  list-style: disc;
-  list-style-position: inside;
+  position: relative;
+  padding-left: 24px;
+  text-align: left;
   color: #fff;
 }
+
+.approach_info_item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  background: #daa520;
+  border-radius: 50%;
+}
+
 .approach_icons {
   display: flex;
   align-items: center;
@@ -61,6 +87,7 @@
   background: #25274d;
   border-radius: 100px;
   margin: 0 auto 24px;
+  box-shadow: 0 0 25px rgba(218, 165, 32, 0.25);
 }
 
 .approach_icons svg {

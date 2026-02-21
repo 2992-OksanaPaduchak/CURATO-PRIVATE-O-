@@ -26,6 +26,7 @@
   box-shadow: 0 0 25px;
   flex-basis: calc((100% - 24px) / 2);
   position: relative;
+  padding-bottom: 80px;
 }
 
 .glow-gold {
@@ -47,7 +48,8 @@
   margin-bottom: 16px;
 }
 .subscription_box_gold,
-.subscription_box_price {
+.subscription_box_price,
+.subscription_item_icon_wrapper_gold {
   background: linear-gradient(
     to right,
     #fcf6ba 1%,
@@ -67,13 +69,15 @@
   line-height: 150%;
   letter-spacing: -0.01em;
   text-align: center;
+
   color: #8b5e10;
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
 .subscription_box_platinum,
-.subscription_box_price_platinum {
+.subscription_box_price_platinum,
+.subscription_item_icon_wrapper {
   background: linear-gradient(
     to right,
     #dcdcdc 0%,
@@ -133,6 +137,13 @@
   color: #15152b;
 }
 
+.custom-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+}
+
 .subscription_info_item::marker {
   color: #8b5e10;
 }
@@ -143,6 +154,7 @@
 
 .list-spacing {
   margin-left: 40px;
+  margin-top: 8px;
 }
 
 .additional {
@@ -171,4 +183,65 @@
   list-style: disc;
   list-style-position: inside;
   color: #15152b;
+}
+
+.subscription_title_gold,
+.subscription_title_platinum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.subscription-icon-wrapper,
+.subscription_item_icon_wrapper_gold {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscription_icon_gold {
+  fill: #aa771c;
+}
+
+.subscription_icon_platinum {
+  fill: #303031;
+}
+
+.subscription_item_icon_wrapper,
+.subscription_item_icon_wrapper_gold {
+  flex: 0 0 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+}
+
+.subscription_icon_gold_color {
+  fill: #6b4a11;
+}
+
+.subscription_item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.subscription_item:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+}
+
+.subscription_item:hover::before {
+  opacity: 1;
 }

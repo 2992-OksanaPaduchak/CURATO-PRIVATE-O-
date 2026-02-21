@@ -1,66 +1,83 @@
 <!doctype html>
 <html lang="ru">
   <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>CURATO PRIVATE OÜ – Персональный менеджер по управлению домом в Эстонии</title>
+    <title>
+      CURATO PRIVATE OÜ – Персональный менеджер по управлению домом в Эстонии
+    </title>
 
-  <meta name="description" content="Профессиональное управление частным домом в Эстонии. Контроль, обслуживание, координация подрядчиков и экстренное реагирование. Подписка GOLD и PLATINUM." />
+    <meta
+      name="description"
+      content="Профессиональное управление частным домом в Эстонии. Контроль, обслуживание, координация подрядчиков и экстренное реагирование. Подписка GOLD и PLATINUM."
+    />
 
-  <meta name="keywords" content="управление домом, house management Estonia, персональный менеджер дома, обслуживание частного дома, контроль дома, Эстония" />
+    <meta
+      name="keywords"
+      content="управление домом, house management Estonia, персональный менеджер дома, обслуживание частного дома, контроль дома, Эстония"
+    />
 
-  <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="CURATO PRIVATE OÜ – Управление частным домом" />
-  <meta property="og:description" content="Персональный офис по управлению домом. Полный контроль, обслуживание и спокойствие." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourdomain.ee" />
-  <meta property="og:image" content="https://yourdomain.ee/preview.jpg" />
-  <link rel="canonical" href="https://yourdomain.ee" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="CURATO PRIVATE OÜ – Управление частным домом"
+    />
+    <meta
+      property="og:description"
+      content="Персональный офис по управлению домом. Полный контроль, обслуживание и спокойствие."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.ee" />
+    <meta property="og:image" content="https://yourdomain.ee/preview.jpg" />
+    <link rel="canonical" href="https://yourdomain.ee" />
 
-  <link rel="icon" type="image/png" href="./src/images/favicon.png" />
+    <link rel="icon" type="image/png" href="./src/images/favicon.png" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
-  <link rel="stylesheet" href="./src/css/stile.css" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/stile.css" />
+  </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header_container">
         <nav class="header-nav">
-          <a href="#home" class="header_logo">CURATO PRIVATE OÜ</a>
+          <a href="#home" class="header_logo">
+            <div class="header-icon-wrapper">
+              <svg class="header-icon" width="24" height="24">
+                <use href="./src/images/icons.svg#icon-logo"></use>
+              </svg>
+            </div>
+            CURATO PRIVATE OÜ
+          </a>
 
           <ul class="nav_list">
-             <li class="nav_item">
-              <a class="nav_link" href="#approach" class="nav__link">Подход</a>
+            <li class="nav_item">
+              <a class="nav_link" href="#approach">Подход</a>
             </li>
             <li class="nav_item">
-              <a class="nav_link" href="#benefits" class="nav__link"
-                >Преимущества</a
-              >
+              <a class="nav_link" href="#benefits">Преимущества</a>
             </li>
             <li class="nav_item">
-              <a class="nav_link" href="#process" class="nav__link">Процесс</a>
+              <a class="nav_link" href="#process">Процесс</a>
             </li>
             <li class="nav_item">
-              <a class="nav_link" href="#service" class="nav__link"
-                >Формат обслуживания</a
-              >              
+              <a class="nav_link" href="#service">Формат обслуживания</a>
             </li>
             <li class="nav_item">
-              <a class="nav_link" href="#subscription" class="nav__link">Подписка</a>
+              <a class="nav_link" href="#subscription">Подписка</a>
             </li>
             <li class="nav_item">
-              <a
-                class="nav_link"
-                href="#contacts"
-                class="nav__link nav__link--accent"
-              >
-                              Контакты
-              </a>
+              <a class="nav_link" href="#contacts"> Контакты </a>
             </li>
           </ul>
         </nav>
@@ -71,12 +88,21 @@
       <section class="home" id="home">
         <div class="container">
           <h1 class="home_title">CURATO PRIVATE OÜ</h1>
-          <p class="home_text">Забота и контроль в одном сервисе</p>
-          <h2 class="home_subtitle">Ваш личный офис по управлению домом</h2>
-          <p class="home_text">
-            Мы берем на себя контроль, обслуживание и решение бытовых и
-            технических вопросов, чтобы вы могли спокойно заниматься своей
-            жизнью.
+          <p class="home_text">Private Residential Management · Tallinn</p>
+          <p class="home_subtitle">
+            Управление частными резиденциями для владельцев, которые ценят
+            время, порядок и конфиденциальность.
+          </p>
+
+          <p class="home_emphasis">Работаем с ограниченным числом домов.</p>
+
+          <p class="home_subtitle">
+            Берем на себя полную ответственность за контроль, обслуживание и
+            координацию.
+          </p>
+
+          <p class="home_final">
+            Вы живете своей жизнью. Дом функционирует без вашего участия.
           </p>
           <div class="home_box_btn">
             <button class="home_btn">Запросить аудит дома</button>
@@ -128,8 +154,8 @@
               </div>
               <h2 class="approach_title">РЕШЕНИЕ</h2>
               <h3 class="approach_subtitle">
-                CURATO PRIVATE - это не услуги, это порядок, контроль и
-                спокойствие
+                CURATO PRIVATE - обеспечивает системный контроль частных домов в
+                Таллине
               </h3>
               <p class="approach_text">
                 Мы работаем как единый центр управления вашим домом:
@@ -141,7 +167,8 @@
                 <li class="approach_info_item">никакого стресса</li>
               </ul>
               <h3 class="approach_subtitle">
-                Один номер - все бытовые вопросы решены
+                Один номер - все бытовые вопросы решены без колл-центров и без
+                перекладывание ответственности
               </h3>
             </li>
           </ul>
@@ -166,8 +193,8 @@
                   Мелкий ремонт без лишних вызовов
                 </h3>
                 <p class="benefits_text">
-                  Электрика и сантехника до 10 часов: розетки, выключатели,
-                  светильники, протечки, смесители, сифоны
+                  Электрика и сантехника: розетки, выключатели, светильники,
+                  протечки, смесители, сифоны
                 </p>
               </li>
               <li class="benefits_item">
@@ -213,6 +240,9 @@
 
       <section id="process" class="process">
         <div class="container">
+          <h2 class="process_title_info">
+            Вы живете своей жизнью. Мы заботимся о вашем доме.
+          </h2>
           <ul class="process_list">
             <li class="process_item">
               <h2 class="process_title">КАК ЭТО РАБОТАЕТ</h2>
@@ -250,25 +280,28 @@
               <p class="process_text">Один ответственный контакт</p>
               <p class="process_text">Спокойствие - даже когда вас нет рядом</p>
               <div class="process_img">
-              <img src="./src/images/lx_chicago76_hom_project_05.jpeg" alt="" />
+                <img
+                  src="./src/images/lx_chicago76_hom_project_05.jpeg"
+                  alt=""
+                />
               </div>
             </li>
 
             <li class="process_item">
               <h2 class="process_title">ПРИНЦИПЫ РАБОТЫ</h2>
               <p class="process_text">Локальное присутствие</p>
-              <p class="process_text">Конфиденциальность</p>
+              <p class="process_text">Конфиденциальность по умолчанию</p>
               <p class="process_text">Прозрачная отчетность</p>
-              <p class="process_text">Пунктуальность и надежность</p>
+              <p class="process_text">Ответственность и надежность</p>
               <p class="process_text">Работа по договору</p>
               <div class="process_img2">
-               <img src="./src/images/b4c68a08-92a6-45c1-8012-ed2d954267d7.png" alt="" />
-               </div>
+                <img
+                  src="./src/images/b4c68a08-92a6-45c1-8012-ed2d954267d7.png"
+                  alt=""
+                />
+              </div>
             </li>
           </ul>
-          <h2 class="process_title_info">
-            Вы живете своей жизнью. Мы заботимся о вашем доме.
-          </h2>
         </div>
       </section>
 
@@ -281,138 +314,387 @@
           </p>
           <p class="service_text">Подписка это:</p>
           <ul class="service_list">
-            <li class="service_item">приоритетное обслуживание</li>
-            <li class="service_item">системный подход</li>
+            <li class="service_item">полное операционное управление</li>
+            <li class="service_item">системная комунникация</li>
             <li class="service_item">ответственность за результат</li>
-            <li class="service_item">долгосрочное спокойствие</li>           
-            </li>
+            <li class="service_item">долгосрочное спокойствие</li>
           </ul>
-          <p class="service_text">(Индивидуальные условия обсуждаются после аудита дома.)</p>
-          <!-- <div class="service_box_btn">
-          <button class="service_btn" type="button"> 
-            <svg class="service_icons" viewBox="0 0 32 32">
-            <use href="./src/images/diamond.svg#icon-diamond"></use>
-            </svg>
-            GOLD
-          </button>
-          <button class="service_btn platinum_btn" type="button"> 
-            <svg class="service_icons" viewBox="0 0 32 32">
-            <use href="./src/images/diamond.svg#icon-diamond"></use>
-            </svg>
-            PLATINUM
-          </button>
-          </div> -->
+          <p class="service_text">
+            (Индивидуальные условия обсуждаются после аудита дома.)
+          </p>
         </div>
       </section>
-  <section id="subscription" class="subscription">
-  <div class="container">
-    <p class="subscription_text">Забота и контроль в одном сервисе</p>
-    <h2 class="subscription_title">Ваш личный офис по управлению домом</h2>
-    <p class="subscription_text">
-      Мы берем на себя контроль, обслуживание и решение бытовых и технических вопросов,
-      чтобы вы могли спокойно заниматься своей жизнью.
-    </p>
 
-    <ul class="subscription_list">
-
-        <li class="subscription_item glow-gold">
-          <div class="subscription_box_gold">
-        <h2 class="subscription_title_gold">GOLD</h2>
-        </div>
-        <h3 class="subscription_subtitle">
-          "Я знаю, что с домом все в порядке"
-        </h3>
-
-        <ul class="subscription_info_list">
-          <li class="subscription_info_item"><span class="subscription_info_span">1 визит</span> в неделю</li>
-          <li class="subscription_info_item">
-            Мелкие работы до <span class="subscription_info_span">15 часов</span> в месяц, включая:
-            <ul class="subscription_info_list list-spacing">
-              <li class="subscription_info_item">Электрика и свет</li>
-              <li class="subscription_info_item">Сантехника и протечки</li>
-              <li class="subscription_info_item">Ремонт дверей и окон</li>
-            </ul>
-          </li>
-          <li class="subscription_info_item">Контроль инженерных систем</li>
-          <li class="subscription_info_item">Хранение ключей и безопасность</li>
-          <li class="subscription_info_item">Фото- и видеоотчеты после визитов</li>
-          <li class="subscription_info_item">Консультации по улучшению и оптимизации</li>
-          <li class="subscription_info_item">Консультации по подключению дополнительных услуг куратора</li>
-        </ul>
-        <div class="subscription_box_price">
-        <p class="subscription_price">890 €/месяц</p>
-        </div>
-      </li>
-
-     
-      <li class="subscription_item glow-platinum">
-        <div class="subscription_box_platinum">
-        <h2 class="subscription_title_platinum">PLATINUM</h2>
-        </div>
-        <h3 class="subscription_subtitle">
-          "Я вообще об этом не думаю"
-        </h3>
-
-        <ul class="subscription_info_list">
-          <li class="subscription_info_item"><span class="subscription_info_span">2 визита</span> в неделю</li>
-          <li class="subscription_info_item">
-            Мелкие работы до <span class="subscription_info_span">30 часов</span> в месяц, включая:
-            <ul class="subscription_info_list list-spacing">
-              <li class="subscription_info_item">Электрика и свет</li>
-              <li class="subscription_info_item">Сантехника и протечки</li>
-              <li class="subscription_info_item">Ремонт и монтаж</li>
-            </ul>
-          </li>
-          <li class="subscription_info_item">Контроль и координация подрядчиков</li>
-          <li class="subscription_info_item">Мойка фасада и крыши 1 раз в год</li>
-          <li class="subscription_info_item">Присмотр за домом и животными</li>
-          <li class="subscription_info_item">
-            Сезонная подготовка дома 1 раз в год:
-            осмотр крыши, чистка водостоков и ливневок
-          </li>
-          <li class="subscription_info_item">
-            Реагирование на экстренные ситуации в течение 1 часа
-          </li>
-        </ul>
-        <div class="subscription_box_price_platinum">
-        <p class="subscription_price_platinum">1490 €/месяц</p>
-        </div>
-      </li>
-
-    </ul>
-<div class="additional" >
-<h2 class="subscription_title">+ Дополнительные услуги</h2>
-</div>
-
-    <ul class="additional_services_list">         
-      <li class="additional_services_item">Услуги куратора – 55 €/час</li>
-      <li class="additional_services_item">Подготовка дома к продаже или аренде – 300 €</li>
-      <li class="additional_services_item">Мойка фасада дома– 400–800 €</li>
-      <li class="additional_services_item">Мойка крыши и профилактика протечек – 350–700 €</li>
-    </ul>
-
-  </div>
-</section>
-      <footer id="contacts" class="footer">
+      <section id="subscription" class="subscription">
         <div class="container">
-          
-          <a href="#" class="footer_logo">CURATO PRIVATE OÜ</a>
-          <address class="footer_address">
-            <ul class="footer_list">
-              <li class="footer_item">
-                <a class="footer_address_a" href="mailto:vanazelyazko@gmail.com"
-                  >vanazelyazko@gmail.com</a
-                >
-              </li>
-              <li class="footer_address">
-                <a class="footer_address_a" href="tel:+37258176400">+372 5817 6400</a>
-              </li>
-            </ul>
-          </address>
-          
-          <button class="footer_btn" type="button">Запросить аудит дома</button>
-         </div>
+          <p class="subscription_text">Забота и контроль в одном сервисе</p>
+          <h2 class="subscription_title">
+            Ваш личный офис по управлению домом
+          </h2>
+          <p class="subscription_text">
+            Мы берем на себя контроль, обслуживание и решение бытовых и
+            технических вопросов, чтобы вы могли спокойно заниматься своей
+            жизнью.
+          </p>
 
+          <ul class="subscription_list">
+            <li class="subscription_item glow-gold">
+              <div class="subscription_box_gold">
+                <h2 class="subscription_title_gold">
+                  <span class="subscription-icon-wrapper">
+                    <svg class="subscription_icon_gold" width="40" height="40">
+                      <use href="./src/images/icons.svg#icon-crown"></use>
+                    </svg>
+                  </span>
+                  GOLD
+                </h2>
+              </div>
+              <h3 class="subscription_subtitle">
+                "Я знаю, что с домом все в порядке"
+              </h3>
+
+              <ul class="subscription_info_list">
+                <li class="subscription_info_item">
+                  <span class="subscription_info_span">1 визит</span> в неделю
+                </li>
+                <li class="subscription_info_item">
+                  Мелкие работы до
+                  <span class="subscription_info_span">15 часов</span> в месяц,
+                  включая:
+                  <ul class="subscription_info_list list-spacing">
+                    <li class="subscription_info_item custom-item">
+                      <div class="subscription_item_icon_wrapper_gold">
+                        <svg
+                          class="subscription_icon_gold_color"
+                          width="24"
+                          height="24"
+                        >
+                          <use
+                            href="./src/images/icons.svg#icon-electricity"
+                          ></use>
+                        </svg>
+                      </div>
+                      Электрика и свет
+                    </li>
+                    <li class="subscription_info_item custom-item">
+                      <div class="subscription_item_icon_wrapper_gold">
+                        <svg
+                          class="subscription_icon_gold_color"
+                          width="18"
+                          height="18"
+                        >
+                          <use
+                            href="./src/images/icons.svg#icon-plumbering"
+                          ></use>
+                        </svg>
+                      </div>
+                      Сантехника и протечки
+                    </li>
+                    <li class="subscription_info_item custom-item">
+                      <div class="subscription_item_icon_wrapper_gold">
+                        <svg
+                          class="subscription_icon_gold_color"
+                          width="18"
+                          height="18"
+                        >
+                          <use href="./src/images/icons.svg#icon-wrench"></use>
+                        </svg>
+                      </div>
+                      Мелкий ремонт
+                    </li>
+                  </ul>
+                </li>
+                <li class="subscription_info_item custom-item">
+                  <div class="subscription_item_icon_wrapper_gold">
+                    <svg
+                      class="subscription_icon_gold_color"
+                      width="18"
+                      height="18"
+                    >
+                      <use href="./src/images/icons.svg#icon-user-check"></use>
+                    </svg>
+                  </div>
+                  Контроль инженерных систем
+                </li>
+                <li class="subscription_info_item custom-item">
+                  <div class="subscription_item_icon_wrapper_gold">
+                    <svg
+                      class="subscription_icon_gold_color"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./src/images/icons.svg#icon-key"></use>
+                    </svg>
+                  </div>
+                  Хранение ключей и безопасность
+                </li>
+                <li class="subscription_info_item custom-item">
+                  <div class="subscription_item_icon_wrapper_gold">
+                    <svg
+                      class="subscription_icon_gold_color"
+                      width="18"
+                      height="18"
+                    >
+                      <use href="./src/images/icons.svg#icon-camera"></use>
+                    </svg>
+                  </div>
+                  Фото- и видеоотчеты после визитов
+                </li>
+                <li class="subscription_info_item custom-item">
+                  <div class="subscription_item_icon_wrapper_gold">
+                    <svg
+                      class="subscription_icon_gold_color"
+                      width="18"
+                      height="18"
+                    >
+                      <use href="./src/images/icons.svg#icon-user-plus"></use>
+                    </svg>
+                  </div>
+                  Консультации по улучшению и оптимизации дома
+                </li>
+                <li class="subscription_info_item custom-item">
+                  <div class="subscription_item_icon_wrapper_gold">
+                    <svg
+                      class="subscription_icon_gold_color"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./src/images/icons.svg#icon-clock"></use>
+                    </svg>
+                  </div>
+                  Реагирование на экстренные ситуации в течение 2 часов
+                </li>
+              </ul>
+              <div class="subscription_box_price">
+                <p class="subscription_price">890 €/месяц</p>
+              </div>
+            </li>
+
+            <li class="subscription_item glow-platinum">
+              <div class="subscription_box_platinum">
+                <h2 class="subscription_title_platinum">
+                  <div class="subscription_icon_wrapper">
+                    <svg
+                      class="subscription_icon_platinum"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./src/images/icons.svg#icon-diamond"></use>
+                    </svg>
+                  </div>
+                  PLATINUM
+                </h2>
+              </div>
+              <h3 class="subscription_subtitle">"Я вообще об этом не думаю"</h3>
+
+              <ul class="subscription_info_list">
+                <li class="subscription_info_item">
+                  <span class="subscription_info_span">2 визита</span> в неделю
+                </li>
+                <li class="subscription_info_item">
+                  Мелкие работы до
+                  <span class="subscription_info_span">30 часов</span> в месяц,
+                  включая:
+                  <ul class="subscription_info_list list-spacing">
+                    <li class="subscription_info_item custom-item">
+                      <div class="subscription_item_icon_wrapper">
+                        <svg
+                          class="subscription_icon_platinum"
+                          width="24"
+                          height="24"
+                        >
+                          <use
+                            href="./src/images/icons.svg#icon-electricity"
+                          ></use>
+                        </svg>
+                      </div>
+                      Электрика и свет
+                    </li>
+
+                    <li class="subscription_info_item custom-item">
+                      <div class="subscription_item_icon_wrapper">
+                        <svg
+                          class="subscription_icon_platinum"
+                          width="18"
+                          height="18"
+                        >
+                          <use
+                            href="./src/images/icons.svg#icon-plumbering"
+                          ></use>
+                        </svg>
+                      </div>
+                      Сантехника и протечки
+                    </li>
+                    <li class="subscription_info_item custom-item">
+                      <div class="subscription_item_icon_wrapper">
+                        <svg
+                          class="subscription_icon_platinum"
+                          width="18"
+                          height="18"
+                        >
+                          <use href="./src/images/icons.svg#icon-wrench"></use>
+                        </svg>
+                      </div>
+                      Ремонт и монтаж
+                    </li>
+                  </ul>
+                </li>
+                <li class="subscription_info_item custom-item">
+                  <div class="subscription_item_icon_wrapper">
+                    <svg
+                      class="subscription_icon__platinum"
+                      width="18"
+                      height="18"
+                    >
+                      <use href="./src/images/icons.svg#icon-user-check"></use>
+                    </svg>
+                  </div>
+                  Контроль и координация подрядчиков
+                </li>
+                <li class="subscription_info_item custom-item">
+                  <div class="subscription_item_icon_wrapper">
+                    <svg
+                      class="subscription_icon__platinum"
+                      width="16"
+                      height="16"
+                    >
+                      <use href="./src/images/icons.svg#icon-logo"></use>
+                    </svg>
+                  </div>
+                  Мойка фасада и крыши 1 раз в год
+                </li>
+                <li class="subscription_info_item custom-item">
+                  <div class="subscription_item_icon_wrapper">
+                    <svg
+                      class="subscription_icon__platinum"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./src/images/icons.svg#icon-house"></use>
+                    </svg>
+                  </div>
+                  Присмотр за домом и животными в период отсутствия хозяев
+                </li>
+                <li class="subscription_info_item custom-item">
+                  <div class="subscription_item_icon_wrapper">
+                    <svg
+                      class="subscription_icon__platinum"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./src/images/icons.svg#icon-achievement"></use>
+                    </svg>
+                  </div>
+                  Сезонная подготовка дома 1 раз в год: осмотр крыши, чистка
+                  водостоков и ливневок
+                </li>
+                <li class="subscription_info_item custom-item">
+                  <div class="subscription_item_icon_wrapper">
+                    <svg
+                      class="subscription_icon__platinum"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./src/images/icons.svg#icon-clock"></use>
+                    </svg>
+                  </div>
+                  Реагирование на экстренные ситуации в течение 1 часа
+                </li>
+                <li class="subscription_info_item custom-item">
+                  <div class="subscription_item_icon_wrapper">
+                    <svg
+                      class="subscription_icon__platinum"
+                      width="18"
+                      height="18"
+                    >
+                      <use href="./src/images/icons.svg#icon-camera"></use>
+                    </svg>
+                  </div>
+                  Фото- и видеоотчеты после визитов
+                </li>
+              </ul>
+              <div class="subscription_box_price_platinum">
+                <p class="subscription_price_platinum">1490 €/месяц</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer id="contacts" class="footer">
+        <div class="container block">
+          <div class="footer_container">
+            <a href="#home" class="footer_logo">
+              <div class="footer-icon-wrapper">
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./src/images/icons.svg#icon-logo"></use>
+                </svg>
+              </div>
+
+              CURATO PRIVATE OÜ</a
+            >
+
+            <p class="footer-text">
+              Профессиональное управление частным домом в Эстонии. Контроль,
+              обслуживание, координация подрядчиков и экстренное реагирование.
+              Подписка GOLD и PLATINUM.
+            </p>
+            <div>
+              <button class="footer_btn" type="button">
+                Запросить аудит дома
+              </button>
+            </div>
+          </div>
+          <div class="footer_block">
+            <address class="footer_address">
+              <ul class="footer_list">
+                <li class="footer_item">
+                  <a
+                    class="footer_address_a"
+                    href="mailto:vanazelyazko@gmail.com"
+                    >vanazelyazko@gmail.com</a
+                  >
+                </li>
+                <li class="footer_item">
+                  <a class="footer_address_a" href="tel:+37258176400"
+                    >+372 5817 6400</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div>
+              <ul class="footer-soc-list">
+                <li class="footer-soc-item">
+                  <a class="footer-soc-linc" href="./index.html">
+                    <svg class="footer-soc-icon" width="24" height="24">
+                      <use href="./src/images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-soc-item">
+                  <a class="footer-soc-linc" href="./index.html">
+                    <svg class="footer-soc-icon" width="24" height="24">
+                      <use href="./src/images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-soc-item">
+                  <a class="footer-soc-linc" href="./index.html">
+                    <svg class="footer-soc-icon" width="24" height="24">
+                      <use href="./src/images/icons.svg#icon-whatsapp"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-soc-item">
+                  <a class="footer-soc-linc" href="./index.html">
+                    <svg class="footer-soc-icon" width="24" height="24">
+                      <use href="./src/images/icons.svg#icon-telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </footer>
     </main>
   </body>
