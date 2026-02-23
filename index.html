@@ -47,6 +47,7 @@
     />
     <link rel="stylesheet" href="./src/css/stile.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="container header_container">
@@ -93,14 +94,11 @@
             Управление частными резиденциями для владельцев, которые ценят
             время, порядок и конфиденциальность.
           </p>
-
           <p class="home_emphasis">Работаем с ограниченным числом домов.</p>
-
           <p class="home_subtitle">
             Берем на себя полную ответственность за контроль, обслуживание и
             координацию.
           </p>
-
           <p class="home_final">
             Вы живете своей жизнью. Дом функционирует без вашего участия.
           </p>
@@ -620,6 +618,66 @@
           </ul>
         </div>
       </section>
+
+      <section class="reviews">
+        <div class="container">
+          <div class="reviews_container">
+            <div class="reviews_title_container">
+              <div class="reviews_title_box">
+                <h2 class="reviews_title">Оставить отзыв</h2>
+              </div>
+              <span class="reviews_commenting">
+                <div class="reviews_icon_wrapper">
+                  <svg class="reviews_icon" width="24" height="24">
+                    <use href="./src/images/icons.svg#icon-bubbles2"></use>
+                  </svg>
+                </div>
+                "Отзывы (1)"
+              </span>
+            </div>
+            <form action="#" method="post">
+              <div class="form-group">
+                <label class="reviews_label" for="name">Ваше имя:</label>
+                <input
+                  class="reviews_input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Владимир Богданович"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="reviews_label" for="email"
+                  >Email (необезательно):</label
+                >
+                <input
+                  class="reviews_input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="example@mail.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="reviews_label" for="message">Ваш отзыв:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  placeholder="Напишите ваши впечатления..."
+                ></textarea>
+              </div>
+
+              <button class="reviews_btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
       <footer id="contacts" class="footer">
         <div class="container block">
           <div class="footer_container">

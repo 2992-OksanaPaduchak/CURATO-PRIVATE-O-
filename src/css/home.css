@@ -93,10 +93,10 @@
   line-height: 150%;
   letter-spacing: -0.01em;
   color: #fff;
-  background-color: #daa520;
+  background-color: #6b4a11;
   cursor: pointer;
   border: none;
-  border-radius: 200px;
+  border-radius: 8px;
   padding: 16px 60px;
   width: 350px;
   height: 60px;
@@ -109,13 +109,13 @@
 }
 
 .info_btn {
-  color: #daa520;
+  color: #6b4a11;
   background-color: #fff;
 }
 
 .home_btn:hover,
 .home_btn:focus {
-  background-color: #aa771c;
+  background-color: #553b0d;
 }
 
 .home_btn:hover {
