@@ -55,6 +55,7 @@
   gap: 40px;
   margin-right: 12px;
 }
+
 .nav_link {
   font-weight: 500;
   font-size: 16px;
@@ -84,6 +85,7 @@
 .nav_link:hover {
   color: #daa520;
 }
+
 .header_logo {
   font-weight: 500;
   font-size: 24px;

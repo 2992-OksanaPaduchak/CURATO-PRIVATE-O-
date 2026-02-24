@@ -103,7 +103,9 @@
             Вы живете своей жизнью. Дом функционирует без вашего участия.
           </p>
           <div class="home_box_btn">
-            <button class="home_btn">Запросить аудит дома</button>
+            <button class="home_btn" type="button" data_modal_open>
+              Запросить аудит дома
+            </button>
             <a class="home_btn info_btn" href="#process">Узнать подробнее</a>
           </div>
         </div>
@@ -721,7 +723,6 @@
                 <textarea
                   id="message"
                   name="message"
-                  rows="5"
                   required
                   placeholder="Напишите ваши впечатления..."
                 ></textarea>
@@ -752,7 +753,7 @@
               Подписка GOLD и PLATINUM.
             </p>
             <div>
-              <button class="footer_btn" type="button">
+              <button class="footer_btn" type="button" data_modal_open>
                 Запросить аудит дома
               </button>
             </div>
@@ -809,6 +810,103 @@
           </div>
         </div>
       </footer>
+
+      <div class="backdrop" data_modal>
+        <div class="modal">
+          <button type="button" class="modal_open" data_modal_close>X</button>
+          <div class="modal_text_box">
+            <p class="modal_text">ЗАКАЖИТЕ БЕСПЛАТНЫЙ АУДИТ ДОМА</p>
+            <p class="modal_text modal_text_color">
+              МЫ СВЯЖЕМСЯ С ВАМИ В ТЕЧЕНИИ 30 МИНУТ
+            </p>
+          </div>
+          <form class="modal_form">
+            <div class="modal_field">
+              <label class="modal_label" for="modal_name">Ваше имя:</label>
+              <div class="input_wrapper">
+                <input
+                  class="modal_input"
+                  type="text"
+                  id="modal_name"
+                  name="modal_name"
+                  required
+                />
+                <svg class="modal_icon" width="24" height="24">
+                  <use href="./src/images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="modal_field">
+              <label class="modal_label" for="modal_tel">Тел:</label>
+              <div class="input_wrapper">
+                <input
+                  class="modal_input"
+                  type="modal_tel"
+                  id="modal_tel"
+                  name="modal_tel"
+                  required
+                />
+                <svg class="modal_icon" width="24" height="24">
+                  <use href="./src/images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal_field">
+              <label class="modal_label" for="modal_email">Email:</label>
+              <div class="input_wrapper">
+                <input
+                  class="modal_input"
+                  type="modal_email"
+                  id="modal_email"
+                  name="modal_email"
+                  required
+                />
+                <svg class="modal_icon" width="24" height="24">
+                  <use href="./src/images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal_field">
+              <label class="modal_label" for="modal_message"
+                >Комментарий:</label
+              >
+              <textarea
+                class="modal_textarea"
+                id="modal_message"
+                name="modal_message"
+                required
+                placeholder="Ввод текста..."
+              ></textarea>
+            </div>
+
+            <div class="input_field">
+              <input
+                type="checkbox"
+                name="policy"
+                id="policy"
+                class="modal_check_input visually-hidden"
+                value="true"
+                required
+              />
+              <label for="policy" class="modal_check_text">
+                <span class="modal_check">
+                  <svg class="modal_check_icon" width="10" height="10">
+                    <use href="./src/images/icons.svg#icon-check"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the
+                <a href="./index.html" class="modal-check-privacy"
+                  >Privacy Policy</a
+                >
+              </label>
+            </div>
+
+            <button class="modal_btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
     </main>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
