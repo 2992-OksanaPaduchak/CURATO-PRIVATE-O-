@@ -5,31 +5,31 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1440px;
+  max-width: 320px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
 .service_box {
-  margin-left: 80px;
+  padding: 20px;
 }
 
 .service_title {
   font-weight: 600;
-  font-size: 32px;
-  line-height: 120%;
+  font-size: 26px;
+  line-height: 111%;
   letter-spacing: 0.02em;
   color: #daa520;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .service_text,
 .service_item {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 120%;
   letter-spacing: 0.02em;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .service_item {
@@ -48,8 +48,48 @@
 }
 
 .service_item::before {
-  content: "•";
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: #daa520;
+  border-radius: 50%;
   position: absolute;
   left: 0;
-  color: #daa520;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .service {
+    max-width: 768px;
+    padding: 50px 0;
+  }
+
+  .service_box {
+    padding: 40px;
+  }
+
+  .service_title {
+    font-size: 32px;
+    line-height: 120%;
+    margin-bottom: 24px;
+  }
+
+  .service_text,
+  .service_item {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .service_item::before {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .service {
+    max-width: 1440px;
+    padding: 60px 0;
+  }
 }

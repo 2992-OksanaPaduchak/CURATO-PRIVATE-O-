@@ -113,3 +113,19 @@
 .header_logo:hover {
   opacity: 0.8;
 }
+
+.header_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #6b4a11;
+  background-color: #fff;
+  margin-left: 0 auto;
+}

@@ -1,24 +1,26 @@
 .process {
   background-color: #aaabb8;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
+
 .process_list {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 14px;
 }
 
 .process_item {
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #15152b;
   justify-self: center;
-  padding: 40px;
+  padding: 20px;
+  width: 100%;
   text-align: center;
-  border-radius: 20px;
-  flex-basis: calc((100% - 16px * 2) / 3);
+  border-radius: 12px;
+  min-height: 550px;
   transition:
     transform 0.35s ease,
     box-shadow 0.35s ease;
@@ -40,17 +42,17 @@
 .process_title,
 .process_title_info {
   font-weight: 600;
-  font-size: 32px;
-  line-height: 120%;
+  font-size: 26px;
+  line-height: 111%;
   letter-spacing: 0.02em;
   text-align: center;
   color: #daa520;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .process_subtitle {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 120%;
   letter-spacing: 0.02em;
   color: #daa520;
@@ -59,16 +61,15 @@
 
 .process_text {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 120%;
   letter-spacing: 0.02em;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .process_item img {
   width: 100%;
   height: auto;
-  border-radius: 12px;
   margin-top: auto;
   border-radius: 12px;
 }
@@ -76,5 +77,59 @@
 .process_title_info {
   text-align: center;
   color: #25274d;
-  margin-top: 24px;
+  margin-top: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .process {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .process_list {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .process_item {
+    min-height: 864px;
+    padding: 40px;
+    border-radius: 20px;
+  }
+
+  .process_title,
+  .process_title_info {
+    font-size: 32px;
+    line-height: 120%;
+    margin-bottom: 24px;
+  }
+
+  .process_subtitle {
+    font-size: 24px;
+  }
+
+  .process_text {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .process_title_info {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .process {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .process_list {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .process_item {
+    flex-basis: calc((100% - 16px * 2) / 3);
+  }
 }
