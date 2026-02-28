@@ -88,7 +88,6 @@
 .reviews_textarea {
   resize: vertical;
   height: 84px;
-  padding: 6px 12px 6px 32px;
 }
 
 .reviews_icon {
@@ -195,7 +194,6 @@
 
   .reviews_textarea {
     height: 120px;
-    padding: 10px 16px 10px 62px;
   }
 
   .reviews_icon {
