@@ -122,8 +122,8 @@
           <ul class="approach_list">
             <li class="approach_item">
               <div class="approach_icons">
-                <svg class="icon-problem" viewBox="0 0 32 32">
-                  <use href="./src/images/problem.svg"></use>
+                <svg class="icon-solution" width="64" height="64">
+                  <use href="./src/images/icons.svg#icon-problem"></use>
                 </svg>
               </div>
               <h2 class="approach_title">ПРОБЛЕМА</h2>
@@ -154,8 +154,8 @@
 
             <li class="approach_item">
               <div class="approach_icons">
-                <svg class="icon-solution" viewBox="0 0 32 32">
-                  <use href="./src/images/solution.svg"></use>
+                <svg class="icon-solution" width="64" height="64">
+                  <use href="./src/images/icons.svg#icon-solution"></use>
                 </svg>
               </div>
               <h2 class="approach_title">РЕШЕНИЕ</h2>
@@ -235,9 +235,15 @@
             </ul>
             <div class="benefits_img_box">
               <img
+                srcset="
+                  ./src/images/benefits/smart-home.png    1x,
+                  ./src/images/benefits/smart-home-2x.png 2x
+                "
                 class="benefits_img"
-                src="./src/images/AI_SmartHome_WallMounted.jpg"
-                alt="home"
+                src="./src/images/benefits/smart-home.png"
+                alt="SmartHome"
+                width="600"
+                height="420"
               />
             </div>
           </div>
@@ -270,10 +276,34 @@
               <p class="process_text">
                 Плановые и экстренные задачи решаются без вашего участия.
               </p>
-              <img
-                src="./src/images/resident_2024-10-10_1nnav88m_image-20-1.avif"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./src/images/process/repairer.png    1x,
+                    ./src/images/process/repairer-2x.png 2x
+                  "
+                  media="(min-width: 1380px)"
+                />
+                <source
+                  srcset="
+                    ./src/images/process/repairer-tab.png    1x,
+                    ./src/images/process/repairer-tab-2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./src/images/process/repairer-mob.png    1x,
+                    ./src/images/process/repairer-mob-2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./src/images/process/repairer.png"
+                  alt="Repairer"
+                  width="660"
+                />
+              </picture>
             </li>
 
             <li class="process_item">
@@ -286,10 +316,34 @@
               <p class="process_text">Один ответственный контакт</p>
               <p class="process_text">Спокойствие - даже когда вас нет рядом</p>
               <div class="process_img">
-                <img
-                  src="./src/images/lx_chicago76_hom_project_05.jpeg"
-                  alt=""
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./src/images/process/living-room.png    1x,
+                      ./src/images/process/living-room-2x.png 2x
+                    "
+                    media="(min-width: 1380px)"
+                  />
+                  <source
+                    srcset="
+                      ./src/images/process/living-room-tab.png    1x,
+                      ./src/images/process/living-room-tab-2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./src/images/process/living-room-mob.png    1x,
+                      ./src/images/process/living-room-mob-2x.png 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./src/images/process/living-room.png"
+                    alt="Living room"
+                    width="660"
+                  />
+                </picture>
               </div>
             </li>
 
@@ -301,10 +355,34 @@
               <p class="process_text">Ответственность и надежность</p>
               <p class="process_text">Работа по договору</p>
               <div class="process_img2">
-                <img
-                  src="./src/images/b4c68a08-92a6-45c1-8012-ed2d954267d7.png"
-                  alt=""
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./src/images/process/house-manager.png    1x,
+                      ./src/images/process/house-manager-2x.png 2x
+                    "
+                    media="(min-width: 1380px)"
+                  />
+                  <source
+                    srcset="
+                      ./src/images/process/house-manager-tab.png    1x,
+                      ./src/images/process/house-manager-tab-2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./src/images/process/house-manager-mob.png    1x,
+                      ./src/images/process/house-manager-mob-2x.png 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./src/images/process/house-manager.png"
+                    alt="House manager"
+                    width="660"
+                  />
+                </picture>
               </div>
             </li>
           </ul>
