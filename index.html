@@ -49,7 +49,7 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header_container">
         <nav class="header-nav">
           <a href="#home" class="header_logo">
@@ -81,15 +81,115 @@
               <a class="nav_link" href="#contacts"> Контакты </a>
             </li>
           </ul>
+          <div class="header_btn_wrapper lang-switcher">
+            <button class="header_btn" type="button">
+              <img
+                class="flag_img"
+                src="./src/images/header/ru.png"
+                alt="Russian"
+              />
+              <span class="lang_text">RU</span>
+            </button>
+            <ul class="lang_list">
+              <li data-lang="en">
+                <img
+                  class="flag_img"
+                  src="./src/images/header/us.png"
+                  alt="США"
+                />EN
+              </li>
+              <li data-lang="ee">
+                <img
+                  class="flag_img"
+                  src="./src/images/header/ee.png"
+                  alt="Estonian"
+                />EST
+              </li>
+              <li data-lang="ru">
+                <img
+                  class="flag_img"
+                  src="./src/images/header/ru.png"
+                  alt="Russian"
+                />RU
+              </li>
+            </ul>
+          </div>
         </nav>
-        <button class="header_btn">
-          <svg class="btn_icon" width="20" height="20">
-            <use href="./src/images/icons.svg#icon-sphere"></use>
+
+        <button class="menu_open_btn" type="button" data-menu-open>
+          <svg class="btn_icon_menu" width="24" height="24">
+            <use href="./src/images/icons.svg#icon-menu"></use>
           </svg>
-          Rus
         </button>
       </div>
-    </header> -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close type="button">
+            <svg class="modal-icon-close" width="12" height="12">
+              <use href="./src/images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-navigation">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="#approach">Подход</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="#benefits">Преимущества</a>
+              </li>
+
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="#process">Процесс</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="#service"
+                  >Формат обслуживания</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="#subscription">Подписка</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="#contacts"> Контакты </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile_btn_wrapper lang-switcher">
+            <button class="mobile_btn" type="button">
+              <img
+                class="mobile_flag_img"
+                src="./src/images/header/ru.png"
+                alt="Russian"
+              />
+              <span class="lang_text">RU</span>
+            </button>
+            <ul class="lang_list">
+              <li data-lang="en">
+                <img
+                  class="mobile_flag_img"
+                  src="./src/images/header/us.png"
+                  alt="США"
+                />EN
+              </li>
+              <li data-lang="ee">
+                <img
+                  class="mobile_flag_img"
+                  src="./src/images/header/ee.png"
+                  alt="Estonian"
+                />EST
+              </li>
+              <li data-lang="ru">
+                <img
+                  class="mobile_flag_img"
+                  src="./src/images/header/ru.png"
+                  alt="Russian"
+                />RU
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main>
       <section class="home" id="home">
@@ -864,7 +964,7 @@
                   <a
                     class="footer_address_a"
                     href="mailto:vanazelyazko@gmail.com"
-                    >vanazelyazko@gmail.com</a
+                    >Curatoprivate@gmail.com</a
                   >
                 </li>
                 <li class="footer_item">
@@ -1006,6 +1106,8 @@
         </div>
       </div>
     </main>
+    <script src="./js/mobil-menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/lang-menu.js"></script>
   </body>
 </html>

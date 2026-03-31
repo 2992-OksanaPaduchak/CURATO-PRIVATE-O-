@@ -19,14 +19,6 @@
   padding: 20px;
   width: 100%;
   min-height: 515px;
-  transition:
-    transform 0.35s ease,
-    box-shadow 0.35s ease;
-}
-
-.approach_item:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
 }
 
 .approach_title {
@@ -167,5 +159,13 @@
 
   .approach_item {
     flex-basis: calc((100% - 32px) / 2);
+    transition:
+      transform 0.35s ease,
+      box-shadow 0.35s ease;
+  }
+
+  .approach_item:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
   }
 }

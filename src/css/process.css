@@ -26,14 +26,6 @@
   text-align: center;
   border-radius: 12px;
   min-height: 550px;
-  transition:
-    transform 0.35s ease,
-    box-shadow 0.35s ease;
-}
-
-.process_item:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
 }
 
 .process_item:nth-child(2) {
@@ -136,5 +128,13 @@
 
   .process_item {
     flex-basis: calc((100% - 16px * 2) / 3);
+    transition:
+      transform 0.35s ease,
+      box-shadow 0.35s ease;
+  }
+
+  .process_item:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
   }
 }
